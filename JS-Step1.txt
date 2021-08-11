@@ -1,0 +1,215 @@
+let timer;
+let sec = 0;
+
+const confirmTime = document.getElementById('confirmTime');
+const startTimer = document.getElementById('startTimer');
+
+confirmTime.addEventListener('click', function() {
+  if (sec === 20) {
+    alert('大正解^-^');
+  } else if (sec < 20) {
+    alert(`まだ${sec}秒、、、再スタートだ`);
+  } else {
+    alert(`もう${sec}秒だ！再挑戦せよ`);
+  }
+  clearInterval(timer);
+  sec = 0;
+});
+
+startTimer.addEventListener('click', function() {
+  clearInterval(timer);
+  timer = setInterval('countUp()', 1000);
+});
+
+const countUp = function() {
+  sec += 1;
+  if (sec === 40) {
+    clearInterval(timer);
+    alert('終了/また挑戦しろ');
+    sec = 0;
+  }
+};
+
+
+let timer;
+let sec = 10;
+
+const nowTime = document.getElementById('nowTime');
+const setTime = document.getElementById('setTime');
+const startTimer = document.getElementById('startTimer');
+const stopTimer = document.getElementById('stopTimer');
+
+setTime.addEventListener('click', function() {
+  sec = document.getElementById('inputTime').value;
+  nowTime.textContent = `${sec}：セット完了です`;
+});
+
+startTimer.addEventListener('click', function() {
+  clearInterval(timer);
+  timer = setInterval('countDown()', 1000);
+});
+
+const countDown = function() {
+  sec -= 1;
+  nowTime.textContent = sec;
+  console.log(sec);
+  if (sec === 0) {
+    alert('終了');
+    clearInterval(timer);
+  }
+};
+
+stopTimer.addEventListener('click', function() {
+  clearInterval(timer);
+  nowTime.textContent = `${sec} + ：ストップしました`;
+});
+
+
+const input = document.getElementById('sampleForm');
+const countNum = document.getElementById('textCounter');
+const reset = document.getElementById('resetBtn');
+const goalNum = 400;
+countNum.textContent = `あと ${goalNum - input.value.length} 文字`;
+
+input.addEventListener('keyup', function() {
+  countNum.textContent = `あと ${goalNum - input.value.length} 文字`;
+});
+
+reset.addEventListener('click', function() {
+  countNum.textContent = `あと ${goalNum} 文字`;
+});
+
+
+
+const pushBtn = document.getElementById('pushBtn');
+const imgSection = document.getElementById('viewImg');
+pushBtn.textContent = data[imgNum].text;
+imgSection.setAttribute('src', data[imgNum].img);
+
+pushBtn.addEventListener('click', function() {
+  if (imgNum === 3) {
+    imgNum = 0;
+  } else {
+    imgNum += 1;
+  }
+
+  imgSection.setAttribute('src', data[imgNum].img);
+  pushBtn.textContent = data[imgNum].text;
+});
+
+
+const setBtn = document.getElementById('setBtn');
+const reset = document.getElementById('resetBtn');
+const showImg = document.getElementById('showImg');
+
+setBtn.addEventListener('click', function() {
+  showImg.innerHTML = '';
+  const checkEvo = Math.floor(Math.random() * 10);
+
+  const first = document.createElement('div');
+  first.innerHTML = "<img src='./img/evolution1.png' alt='原人'  />";
+  showImg.appendChild(first);
+
+  if (checkEvo >= 4) {
+    const second = document.createElement('div');
+    second.innerHTML = "<img src='./img/evolution2.png' alt='旧人'  />";
+    showImg.appendChild(second);
+  }
+  if (checkEvo >= 7) {
+    const third = document.createElement('div');
+    third.innerHTML = "<img src='./img/evolution3.png' alt='新人'/>";
+    showImg.appendChild(third);
+  }
+  if (checkEvo >= 9) {
+    const fourth = document.createElement('div');
+    fourth.innerHTML = "<img src='./img/evolution4.png' alt='現代人'/>";
+    showImg.appendChild(fourth);
+  }
+});
+
+reset.addEventListener('click', function() {
+  showImg.innerHTML = '';
+});
+
+
+
+const Form = document.getElementsByTagName('form');
+const nowPassword = document.getElementById('nowPassword');
+let PasswordValue = 'aaaaa';
+nowPassword.textContent = `現在のパスワードは ${PasswordValue}`;
+const setPassword = document.getElementById('setPassword');
+
+setPassword.addEventListener('click', function() {
+  const confirmPassword = document.getElementById('confirmPassword').value;
+  const newPassword = document.getElementById('newPassword').value;
+  if (PasswordValue === confirmPassword) {
+    if (PasswordValue !== newPassword) {
+      PasswordValue = newPassword;
+      nowPassword.textContent = `現在のパスワードは ${PasswordValue}`;
+      alert(`新しいパスワードは ${PasswordValue}です`);
+    } else {
+      alert('同じパスワードはつかえません！');
+    }
+  } else {
+    alert('古いパスワードが間違っています！');
+  }
+});
+
+
+
+
+const cpHand = document.getElementById('cpHand');
+cpHand.textContent = '相手の手';
+const log = document.getElementById('log');
+log.textContent = '結果：';
+
+const gameStart = document.getElementById('gameStart');
+
+gameStart.addEventListener('click', function() {
+  const myNum = document.getElementById('myHand').value;
+  const cpNum = Math.floor(Math.random() * 3);
+
+  if (cpNum === 0) {
+    cpHand.textContent = '相手の手：グー';
+  } else if (cpNum == 1) {
+    cpHand.textContent = '相手の手：チョキ';
+  } else if (cpNum == 2) {
+    cpHand.textContent = '相手の手：パー';
+  }
+
+  switch (myNum) {
+    case '0': {
+      if (cpNum === 0) {
+        log.textContent = '結果：引き分け';
+      } else if (cpNum === 1) {
+        log.textContent = '結果：勝ち';
+      } else if (cpNum === 2) {
+        log.textContent = '結果：負け';
+      }
+      break;
+    }
+    case '1': {
+      if (cpNum === 0) {
+        log.textContent = '結果：負け';
+      } else if (cpNum === 1) {
+        log.textContent = '結果：引き分け';
+      } else if (cpNum === 2) {
+        log.textContent = '結果：勝ち';
+      }
+      break;
+    }
+    case '2': {
+      if (cpNum === 0) {
+        log.textContent = '結果：勝ち';
+      } else if (cpNum === 1) {
+        log.textContent = '結果：負け';
+      } else if (cpNum === 2) {
+        log.textContent = '結果：引き分け';
+      }
+      break;
+    }
+  }
+});
+
+
+
