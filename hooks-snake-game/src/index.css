@@ -58,7 +58,7 @@ body {
 
 
 .App {
- max-width: calc(9px * 35  1px * 2); /* a. (マスの幅) * 個数  (ボーダーの幅) * 本数 */
+ max-width:  calc(9px * 35 +1px * 2);  /*a. (マスの幅) * 個数  (ボーダーの幅) * 本数 */
  text-align: center;
  }
 
