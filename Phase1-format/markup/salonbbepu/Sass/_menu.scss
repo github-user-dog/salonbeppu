@@ -1,0 +1,13 @@
+.menu-wrap{
+display: flex;
+margin: 0 auto;
+width: 70%;
+position:relative;
+top: 50px;
+}
+
+.menu-inner{
+    position: absolute;
+    top: 2500px;
+    width:100%;
+}

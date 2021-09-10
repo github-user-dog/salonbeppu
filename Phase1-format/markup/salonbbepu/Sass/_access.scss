@@ -1,0 +1,63 @@
+.access-detail{
+    display: flex;
+    width: 80%;
+    margin:0 auto;
+}
+
+.access-shop{
+width: 507px;
+height: 396px;
+background: #D0C5BA 0% 0% no-repeat padding-box;
+opacity: 1;
+}
+
+.shop{
+    font: normal normal bold 24px/29px Roboto Mono for Powerline;
+letter-spacing: 2.4px;
+color: #00000038;
+opacity: 1;
+}
+
+.access-shop-text{
+    text-align: left;
+    position: relative;
+    top: 100px;
+left: 104px;
+width: 200px;
+height: 24px;
+}
+
+.shop-info{
+    width: 300px;
+height: 16px;
+font: normal normal normal 16px/19px Roboto Mono for Powerline;
+letter-spacing: 1.6px;
+color: #FFFFFF;
+opacity: 1;
+}
+
+.access-background{
+    position: absolute;
+top: 3000px;
+width: 1282px;
+height: 757px;
+background: #A193861F 0% 0% no-repeat padding-box;
+opacity: 1;
+}
+
+.access-wrap{
+    position: absolute;
+    top:3200px;
+    width: 100%;
+}
+
+.map{
+    width: 50%;     
+}
+
+
+.access-title{
+    position: relative;
+    top:-50px;
+
+}

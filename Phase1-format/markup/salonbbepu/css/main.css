@@ -1,0 +1,435 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav, ul, li {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+a:visited {
+  color: inherti;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+header h1 {
+  width: 306px;
+  height: 38px;
+  text-align: left;
+  font: normal normal normal 38px/46px Roboto Mono for Powerline;
+  letter-spacing: 3.8px;
+  color: #000000;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+header ul {
+  height: 18px;
+  vertical-align: bottom;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+  font: normal normal normal 18px/22px Roboto Mono for Powerline;
+  letter-spacing: 1.8px;
+  color: #707070;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+header ul li {
+  z-index: 1000;
+  width: 120px;
+  text-align: center;
+}
+
+.catch {
+  text-align: center;
+  font: normal normal normal 38px/128px Roboto;
+  letter-spacing: 3.8px;
+  color: #000000;
+  position: relative;
+  opacity: 1;
+  top: 296px;
+  margin: 0 auto;
+  width: 80%;
+  height: 38px;
+}
+
+.catch-en {
+  position: relative;
+  text-align: center;
+  font: normal normal normal 38px/128px Roboto;
+  letter-spacing: 3.8px;
+  color: #000000;
+  opacity: 1;
+  top: 350px;
+  width: 80%;
+  margin: 0 auto;
+  height: 128px;
+}
+
+.first-v_wrap {
+  z-index: 1;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 800px;
+  opacity: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 599px) {
+  .first-v_wrap {
+    display: none;
+  }
+}
+
+@media (min-width: 1025px) {
+  .catch-img {
+    background: transparent url("img/Blond woman with long curly beautiful hair.png") 0% 0% no-repeat padding-box;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 599px) {
+  .catch-img {
+    z-index: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 689px;
+    height: 800px;
+    background: transparent url("img/Blond woman with long curly beautiful hair.png") 0% 0% no-repeat padding-box;
+    opacity: 1;
+  }
+}
+
+.first-v_text {
+  width: 50%;
+}
+
+@media (max-width: 599px) {
+  .first-v_text {
+    width: 100%;
+    position: absolute;
+    top: -200px;
+    margin: 0 auto;
+    z-index: 2;
+    width: 100%;
+  }
+}
+
+#first-v {
+  width: 100%;
+}
+
+.contents {
+  top: 1596px;
+  left: 174px;
+  width: 500px;
+  height: 42px;
+  text-align: left;
+  font: normal normal normal 40px/68px Hiragino Mincho Pro;
+  letter-spacing: 16px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+.concept_item {
+  margin: 0 auto;
+}
+
+.contents_text {
+  top: 1573px;
+  left: 676px;
+  width: 800px;
+  height: 130px;
+  text-align: left;
+  font: normal normal normal 16px/27px Hiragino Kaku Gothic Pro;
+  letter-spacing: 1.6px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+.concept_contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.background-color1 {
+  width: 1282px;
+  height: 807px;
+  background: #A193861F 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.background-color2 {
+  width: 1282px;
+  height: 560px;
+  background: #A1938689 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.concept-inner {
+  position: absolute;
+  top: 1500px;
+  width: 100%;
+}
+
+.concept-wrap {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.menu-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  width: 70%;
+  position: relative;
+  top: 50px;
+}
+
+.menu-inner {
+  position: absolute;
+  top: 2500px;
+  width: 100%;
+}
+
+.access-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.access-shop {
+  width: 507px;
+  height: 396px;
+  background: #D0C5BA 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.shop {
+  font: normal normal bold 24px/29px Roboto Mono for Powerline;
+  letter-spacing: 2.4px;
+  color: #00000038;
+  opacity: 1;
+}
+
+.access-shop-text {
+  text-align: left;
+  position: relative;
+  top: 100px;
+  left: 104px;
+  width: 200px;
+  height: 24px;
+}
+
+.shop-info {
+  width: 300px;
+  height: 16px;
+  font: normal normal normal 16px/19px Roboto Mono for Powerline;
+  letter-spacing: 1.6px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+.access-background {
+  position: absolute;
+  top: 3000px;
+  width: 1282px;
+  height: 757px;
+  background: #A193861F 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.access-wrap {
+  position: absolute;
+  top: 3200px;
+  width: 100%;
+}
+
+.map {
+  width: 50%;
+}
+
+.access-title {
+  position: relative;
+  top: -50px;
+}
+
+.footer-title {
+  top: 3693px;
+  left: 103px;
+  width: 258px;
+  height: 32px;
+  text-align: left;
+  font: normal normal normal 32px/32px Roboto Mono for Powerline;
+  letter-spacing: 3.2px;
+  color: #7070704D;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+.footer-wrap {
+  width: 100vw;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  top: 3900px;
+}
+
+.footer-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.title--b {
+  position: absolute;
+  left: 101px;
+  text-align: left;
+  font: normal normal normal 18px/24px Roboto;
+  letter-spacing: 5.4px;
+  color: #707070;
+  text-transform: uppercase;
+  opacity: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+hr {
+  position: relative;
+  width: 100px;
+  size: 10px;
+  top: -7px;
+}
+
+body {
+  width: 100%;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,52 @@
+//PC最小幅とSP最大幅を変数に入れる
+$media-pc: ●●px;
+$media-sp: ▲▲px;
+
+//スタイルだけでなくメディアクエリの処理ごと@includeで渡したいので中身に@contentをつけておく
+@mixin pc {
+  @media  screen and (min-width: $media-pc ) {
+    @content;  
+  }
+}
+@mixin sp {
+  @media  screen and (max-width: $media-sp) {
+    @content;
+  }
+}
+
+header {
+  display: flex;
+  width: 100%;
+h1{
+  width: 306px;
+  height: 38px;
+  text-align: left;
+  font: normal normal normal 38px/46px Roboto Mono for Powerline;
+  letter-spacing: 3.8px;
+  color: #000000;
+  text-transform: uppercase;
+  opacity: 1;
+}
+  
+  ul{
+      height: 18px;
+      vertical-align: bottom;
+      margin-top: 10px;
+      display: flex;
+      text-align: left;
+      font: normal normal normal 18px/22px Roboto Mono for Powerline;
+      letter-spacing: 1.8px;
+      color: #707070;
+      text-transform: uppercase;
+      opacity: 1;
+      
+    li{
+      z-index: 1000;
+      width: 120px;
+      text-align: center;
+    }
+  }
+}
+
+
+
