@@ -10,8 +10,10 @@ color: #FFFFFF;
 opacity: 1;
 }
 
-.concept_item{
+.concept-item{
+    width:80%;
     margin:0 auto;
+    display: flex;
 }
 
 .contents_text{
@@ -53,6 +55,16 @@ opacity: 1;
 }
 
 .concept-wrap{
-    width: 90%;
+    width: 100%;
     margin:0 auto;
+}
+
+.cocnept-img1{
+    width: 60%;
+    height: 60%;
+}
+
+.concept-img2{
+    width: 40%;
+    height: 40%;
 }
