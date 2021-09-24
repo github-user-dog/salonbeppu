@@ -1,0 +1,77 @@
+#access{
+    background-color: #A193861F;
+    padding-bottom: $HEIGHT/8;
+}
+
+.access{
+
+    &-wrap{
+        height: auto;
+        width: 80%;
+        
+        margin:0 auto;
+    }
+
+    &-title{
+        position: relative;
+        top:-50px;
+    }
+
+    &-data{
+        display: flex;
+        flex-flow: row-reverse;
+        width: 80vw;
+        margin: 0 auto;
+        @include sp{
+            flex-flow: column;
+            justify-content: center;
+            width:100%;
+        }
+    }
+    &-text{
+        &-wrap{
+            
+            width: 50%;
+            height: 40vw;
+            background: #D0C5BA 0% 0% no-repeat padding-box;
+            @include sp{
+            width:80vw;
+            height: 60vw;
+            } 
+        }
+        &-shop{
+        text-align: left;
+        margin-top: 15%;
+        margin-left: 15%;
+        width: 80%;
+
+        &-title{
+            font: normal normal bold 1.3rem Roboto Mono for Powerline;
+            letter-spacing: 2.4px;
+            color: #00000038;
+            line-height: 2;
+        }
+
+        &-info{
+            
+            font: normal normal normal 1rem Roboto Mono for Powerline;
+            letter-spacing: 1px;
+            color: #FFFFFF;  
+            line-height: 1.5;          
+        }
+
+        }
+
+    }
+
+}
+.map{
+    width: 50%;
+    height: 40vw;    
+    @include sp{
+        width:80vw;
+        height: 60vw;
+    } 
+}
+
+

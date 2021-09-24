@@ -1,0 +1,91 @@
+// スマホ画面
+@mixin sp {
+    @media (max-width:600px){
+        @content;
+    }
+}
+
+.catch{
+font: normal normal normal 38px/128px Roboto;
+letter-spacing: 3.8px;
+color: black;
+
+@include sp{
+    color: white;
+    position:relative;
+    top:30%;
+}
+}
+
+
+.catch-en{
+font: normal normal normal 38px/128px Roboto;
+letter-spacing: 3.8px;
+color: black;
+
+@include sp{
+    position: relative;
+    top :20%;
+    color: white;
+}
+}
+
+.first-v_wrap{
+
+z-index: 1;
+width: 100%;
+height: auto;
+opacity: 1;
+display: flex;
+@include sp{
+display:block;
+
+}
+
+
+}
+
+.catch-img{
+
+    width:50%;       
+    background-image: url("../img/Blond woman with long curly beautiful hair.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    @include sp{
+        z-index: 1;
+        width: 100%;
+    }
+
+}
+
+.first-v_text{
+    width: 50%;
+    height: auto; 
+    width: 50%;
+    display:  flex;
+    flex-flow: column;
+    justify-content: center;
+
+    & p{
+        text-align: center;
+    }
+    @include sp{
+        width :100%;
+        z-index:2;
+    }
+}
+
+#first-v{
+    width:100%;
+}
+
+header li{
+    @include sp{
+        display:none;
+    }
+}
+
+h1{
+    z-index: 3;
+}

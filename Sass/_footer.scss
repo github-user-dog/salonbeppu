@@ -1,0 +1,72 @@
+.footer{        
+    display: flex;
+    @include sp{    
+        justify-content: space-between;
+    }
+
+        &-title{
+            text-align: left;
+            font: normal normal normal 32px/32px Roboto Mono for Powerline;
+            letter-spacing: 3.2px;
+            color: hsla(0, 0%, 44%, 0.302);
+            text-transform: uppercase;
+
+            @include sp{
+                font: normal normal normal 18px/22px Roboto Mono for Powerline;
+            }
+
+        }
+
+
+        &-wrap{
+            
+            width: 90vw;
+            margin :0 auto;
+            display: flex;
+            justify-content: space-between;
+            flex-flow: row-reverse;
+            @include sp{
+            display:block;
+            text-align: center;
+            }
+        }
+
+        
+        &-icon{
+            display: flex;
+        }
+
+        &-button{
+
+            @include sp{
+            margin :$HEIGHT/3 0;
+            width:100%;
+            }
+
+            &-button{
+            width: 100px;
+            height: 30px;
+
+            @include sp{
+                background-color: white;
+                border-color: black;
+                border-width: 1px;
+                width: 140px;
+            }
+            }
+        }
+}
+ 
+.line{
+    margin: $HEIGHT*3/5 auto $HEIGHT*2/5 auto;
+    height: 1px;
+    width: 90vw;
+    background-color: gray;
+    opacity: 0.3;
+
+    @include sp{
+    margin: $HEIGHT/2 auto 0 auto;
+    
+    }
+}
+

@@ -1,0 +1,114 @@
+$WIDTH :100vw;
+$HEIGHT:100vw*560/1282;
+
+
+
+.contents{
+    display: flex;
+    height:$HEIGHT/1.5;
+    align-items: center;
+
+    @include sp{
+      display:block;
+      height:auto;
+    }
+
+    &-title{
+        text-align: center;
+        width: 50%;
+        font: normal normal normal 2rem Hiragino Mincho Pro;
+        letter-spacing: 16px;
+        color: #FFFFFF;
+        opacity: 1;
+    @include sp{
+      margin: $HEIGHT/8;
+      width:100%;
+      font: normal normal normal 1.5rem Hiragino Mincho Pro;
+      height:auto;
+    }
+    }
+
+   &-text{
+    width: 50%;
+    font: normal normal normal 0.7rem Hiragino Kaku Gothic Pro;
+
+    color: #FFFFFF;
+    align-items: left;
+
+    @include sp{
+      width:100%;
+      font: normal normal normal 1.5rem Hiragino Kaku Gothic Pro;
+      margin:$WIDTH/50;
+    }
+}
+
+}
+
+.background-color1{
+  width: 100vw;
+  height: $HEIGHT;
+  background: #A193861F 0% 0% no-repeat padding-box;
+  
+  @include sp{
+    height: 100vw*560/1282*2/2;
+  }
+}
+.background-color2{
+  width: 100vw;
+  height: 100vw*560/1282;
+  background: #A1938689 0% 0% no-repeat padding-box;
+  opacity: 1;
+
+  @include sp{
+    height: 100vw*560/1282*2;
+  }
+}
+
+.concept{
+  &-inner{
+    position: relative;
+    top :(100vw*560/1282*(2/3));
+    width:100%; 
+    @include sp{
+      top :(100vw*560/1282*(1/3));
+    }
+  }
+  &-wrap{
+    width: 90%;
+    margin:0 auto;
+  }
+  &-items{
+    width:100%;
+    height: $HEIGHT/1.5;
+    display: flex;
+    @include sp{
+      height: $HEIGHT;
+      justify-content: center;
+    }
+  }
+  &-img1{
+    width:60%;
+    background-image: url("../img/andrew-neel-f480QIEvwGI-unsplash.png");      
+    background-size: contain;
+    background-repeat: no-repeat;
+    @include sp{
+      width:50%;
+      height: auto;
+      background-image: url("../img/andrew-neel-f480QIEvwGI-unsplash@2x (2).png"); 
+      background-position:bottom;
+    } 
+
+  }
+  &-img2{
+    width:40%;
+    background-image: url("../img/joel-mott-mNYL0surXh8-unsplash.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  
+    @include sp{
+      width: 50%;
+      background-position:bottom;
+    }
+  }
+}
+

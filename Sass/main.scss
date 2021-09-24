@@ -1,0 +1,32 @@
+@import "reset";
+@import "lib";
+@import "header";
+@import "first-v";
+@import "concept";
+@import "menu";
+@import "access";
+@import "contact";
+@import "footer";
+
+.title--b{
+margin-left: 10vw;
+margin-top: 4vw;
+text-align: left;
+font: normal normal normal 18px/24px Roboto;
+letter-spacing: 5.4px;
+color: #707070;
+text-transform: uppercase;
+opacity: 1;
+display: flex;
+}
+
+hr{
+    position:relative;
+    width:100px;
+    size:10px;
+    top: -7px;
+}
+
+body{
+    width:100%;
+}

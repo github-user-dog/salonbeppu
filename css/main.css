@@ -1,0 +1,701 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav, ul, li {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+a:visited {
+  color: inherti;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+header {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+header h1 {
+  width: 50%;
+  text-align: left;
+  font: normal normal normal 2rem Roboto Mono for Powerline;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  header h1 {
+    width: 90%;
+  }
+}
+
+header ul {
+  vertical-align: bottom;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+  font: normal normal normal 1rem Roboto Mono for Powerline;
+  color: #707070;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  header ul {
+    display: none;
+  }
+}
+
+header ul li {
+  z-index: 3;
+  text-align: center;
+}
+
+.line {
+  width: 5vw;
+  height: 5vw;
+}
+
+.line-long {
+  width: 100%;
+  height: 30px;
+  background-color: gray;
+  opacity: 1;
+}
+
+.line-short {
+  width: 80%;
+  height: 30px;
+  background-color: gray;
+  opacity: 1;
+}
+
+.catch {
+  font: normal normal normal 38px/128px Roboto;
+  letter-spacing: 3.8px;
+  color: black;
+}
+
+@media (max-width: 600px) {
+  .catch {
+    color: white;
+    position: relative;
+    top: 30%;
+  }
+}
+
+.catch-en {
+  font: normal normal normal 38px/128px Roboto;
+  letter-spacing: 3.8px;
+  color: black;
+}
+
+@media (max-width: 600px) {
+  .catch-en {
+    position: relative;
+    top: 20%;
+    color: white;
+  }
+}
+
+.first-v_wrap {
+  z-index: 1;
+  width: 100%;
+  height: auto;
+  opacity: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 600px) {
+  .first-v_wrap {
+    display: block;
+  }
+}
+
+.catch-img {
+  width: 50%;
+  background-image: url("../img/Blond woman with long curly beautiful hair.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 600px) {
+  .catch-img {
+    z-index: 1;
+    width: 100%;
+  }
+}
+
+.first-v_text {
+  width: 50%;
+  height: auto;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.first-v_text p {
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .first-v_text {
+    width: 100%;
+    z-index: 2;
+  }
+}
+
+#first-v {
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  header li {
+    display: none;
+  }
+}
+
+h1 {
+  z-index: 3;
+}
+
+.contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 29.12116vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 600px) {
+  .contents {
+    display: block;
+    height: auto;
+  }
+}
+
+.contents-title {
+  text-align: center;
+  width: 50%;
+  font: normal normal normal 2rem Hiragino Mincho Pro;
+  letter-spacing: 16px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+@media (max-width: 600px) {
+  .contents-title {
+    margin: 5.46022vw;
+    width: 100%;
+    font: normal normal normal 1.5rem Hiragino Mincho Pro;
+    height: auto;
+  }
+}
+
+.contents-text {
+  width: 50%;
+  font: normal normal normal 0.7rem Hiragino Kaku Gothic Pro;
+  color: #FFFFFF;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+}
+
+@media (max-width: 600px) {
+  .contents-text {
+    width: 100%;
+    font: normal normal normal 1.5rem Hiragino Kaku Gothic Pro;
+    margin: 2vw;
+  }
+}
+
+.background-color1 {
+  width: 100vw;
+  height: 43.68175vw;
+  background: #A193861F 0% 0% no-repeat padding-box;
+}
+
+@media (max-width: 600px) {
+  .background-color1 {
+    height: 43.68175vw;
+  }
+}
+
+.background-color2 {
+  width: 100vw;
+  height: 43.68175vw;
+  background: #A1938689 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+@media (max-width: 600px) {
+  .background-color2 {
+    height: 87.36349vw;
+  }
+}
+
+.concept-inner {
+  position: relative;
+  top: 29.12116vw;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .concept-inner {
+    top: 14.56058vw;
+  }
+}
+
+.concept-wrap {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.concept-items {
+  width: 100%;
+  height: 29.12116vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 600px) {
+  .concept-items {
+    height: 43.68175vw;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.concept-img1 {
+  width: 60%;
+  background-image: url("../img/andrew-neel-f480QIEvwGI-unsplash.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 600px) {
+  .concept-img1 {
+    width: 50%;
+    height: auto;
+    background-image: url("../img/andrew-neel-f480QIEvwGI-unsplash@2x (2).png");
+    background-position: bottom;
+  }
+}
+
+.concept-img2 {
+  width: 40%;
+  background-image: url("../img/joel-mott-mNYL0surXh8-unsplash.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 600px) {
+  .concept-img2 {
+    width: 50%;
+    background-position: bottom;
+  }
+}
+
+.menu-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  width: 70%;
+  margin-top: 4.36817vw;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media (max-width: 600px) {
+  .menu-wrap {
+    display: block;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.menu-inner {
+  width: 100%;
+}
+
+.menu-title {
+  font: normal normal normal 1.5rem Roboto Mono for Powerline;
+  margin: 12px;
+  width: 80%;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .menu-title {
+    text-align: left;
+  }
+}
+
+.menu-text {
+  text-align: left;
+  font: normal normal normal 16px/19px Roboto Mono for Powerline;
+  margin: 3px;
+}
+
+@media (max-width: 600px) {
+  .menu-text {
+    margin: 5.46022vw;
+  }
+}
+
+.menu-price {
+  text-align: right;
+  font: normal normal normal 16px/19px Roboto Mono for Powerline;
+  margin: 2px;
+}
+
+@media (max-width: 600px) {
+  .menu-price {
+    margin: 3.64015vw;
+  }
+}
+
+.menu-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: center;
+}
+
+.menu-image {
+  width: 100%;
+}
+
+#access {
+  background-color: #A193861F;
+  padding-bottom: 5.46022vw;
+}
+
+.access-wrap {
+  height: auto;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.access-title {
+  position: relative;
+  top: -50px;
+}
+
+.access-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-flow: row-reverse;
+          flex-flow: row-reverse;
+  width: 80vw;
+  margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  .access-data {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+}
+
+.access-text-wrap {
+  width: 50%;
+  height: 40vw;
+  background: #D0C5BA 0% 0% no-repeat padding-box;
+}
+
+@media (max-width: 600px) {
+  .access-text-wrap {
+    width: 80vw;
+    height: 60vw;
+  }
+}
+
+.access-text-shop {
+  text-align: left;
+  margin-top: 15%;
+  margin-left: 15%;
+  width: 80%;
+}
+
+.access-text-shop-title {
+  font: normal normal bold 1.3rem Roboto Mono for Powerline;
+  letter-spacing: 2.4px;
+  color: #00000038;
+  line-height: 2;
+}
+
+.access-text-shop-info {
+  font: normal normal normal 1rem Roboto Mono for Powerline;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+  line-height: 1.5;
+}
+
+.map {
+  width: 50%;
+  height: 40vw;
+}
+
+@media (max-width: 600px) {
+  .map {
+    width: 80vw;
+    height: 60vw;
+  }
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 600px) {
+  .footer {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.footer-title {
+  text-align: left;
+  font: normal normal normal 32px/32px Roboto Mono for Powerline;
+  letter-spacing: 3.2px;
+  color: rgba(112, 112, 112, 0.302);
+  text-transform: uppercase;
+}
+
+@media (max-width: 600px) {
+  .footer-title {
+    font: normal normal normal 18px/22px Roboto Mono for Powerline;
+  }
+}
+
+.footer-wrap {
+  width: 90vw;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-flow: row-reverse;
+          flex-flow: row-reverse;
+}
+
+@media (max-width: 600px) {
+  .footer-wrap {
+    display: block;
+    text-align: center;
+  }
+}
+
+.footer-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 600px) {
+  .footer-button {
+    margin: 14.56058vw 0;
+    width: 100%;
+  }
+}
+
+.footer-button-button {
+  width: 100px;
+  height: 30px;
+}
+
+@media (max-width: 600px) {
+  .footer-button-button {
+    background-color: white;
+    border-color: black;
+    border-width: 1px;
+    width: 140px;
+  }
+}
+
+.line {
+  margin: 26.20905vw auto 17.4727vw auto;
+  height: 1px;
+  width: 90vw;
+  background-color: gray;
+  opacity: 0.3;
+}
+
+@media (max-width: 600px) {
+  .line {
+    margin: 21.84087vw auto 0 auto;
+  }
+}
+
+.title--b {
+  margin-left: 10vw;
+  margin-top: 4vw;
+  text-align: left;
+  font: normal normal normal 18px/24px Roboto;
+  letter-spacing: 5.4px;
+  color: #707070;
+  text-transform: uppercase;
+  opacity: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+hr {
+  position: relative;
+  width: 100px;
+  size: 10px;
+  top: -7px;
+}
+
+body {
+  width: 100%;
+}
+/*# sourceMappingURL=main.css.map */

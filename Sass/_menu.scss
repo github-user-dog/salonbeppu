@@ -1,0 +1,79 @@
+//スタイルだけでなくメディアクエリの処理ごと@includeで渡したいので中身に@contentをつけておく
+@mixin sp {
+    @media (max-width:600px){
+        @content;
+    }
+}
+
+
+.menu{
+
+        &-wrap{
+        display: flex;
+        margin: 0 auto;
+        width: 70%;
+        margin-top: $HEIGHT/10;
+        justify-content: space-around;
+
+        @include sp{
+            display: block;
+             justify-content: center;
+        }
+    }
+
+    &-inner{
+        width:100%;
+    }
+
+    &-title{
+        font: normal normal normal 1.5rem Roboto Mono for Powerline;
+        margin: 12px;
+        width:80%;
+        text-align:center;
+        @include sp{
+        
+        text-align: left;
+        
+        }
+       
+    }
+
+    &-text{
+
+                text-align: left;
+        font: normal normal normal 16px/19px Roboto Mono for Powerline;
+        margin: 3px;
+        @include sp{
+             margin: $HEIGHT/8;
+
+        }
+       
+    }
+
+    &-price{
+
+        text-align: right;
+font: normal normal normal 16px/19px Roboto Mono for Powerline;
+margin: 2px;
+        @include sp{
+        margin: $HEIGHT/12;
+        
+}
+    }
+    &-img{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: center;
+    
+    }
+    &-image{
+        width: 100%;
+    }
+
+}
+
+
